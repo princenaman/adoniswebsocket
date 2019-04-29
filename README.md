@@ -47,6 +47,9 @@ Create channel:
 
     constructor (socket, request) {
       socket.socket._maxListeners = 300
+      // This by default is 10. Increase or decrease this to get the warning.
+      // (node:360220) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 301 disconnect listeners added. Use emitter.setMaxListeners() to increase limit
+
       this.socket = socket
       this.request = request
       console.log('socket connected: ' + socket.id + ' at ' + new Date()) // eslint-disable-line
