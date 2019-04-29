@@ -62,4 +62,4 @@ Create channel:
   }
  ```
  
- Use the test directory to load test the socket.
+ Use the client.js and package.json to load test the socket.
